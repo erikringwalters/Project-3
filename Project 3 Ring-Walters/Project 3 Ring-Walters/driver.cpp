@@ -4,5 +4,6 @@ void main()
 {
 	Substrings a;
 	string str = "thisXstringXhasX'sxinxit";
-	cout << a.noX(str);
+	string newString = a.noX(str, 0);
+	cout << newString << endl;
 }

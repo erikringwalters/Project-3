@@ -7,16 +7,25 @@ Substrings::Substrings()
 }
 
 //Definition of noX
-string Substrings::noX(string input)
+string Substrings::noX(string input, int counter)
 {
-	if (noXCounter == input.length() - 1)
+	if (counter == input.length() - 1)
 	{
 		return input;
 	}
-	if (input[noXCounter] == 'x'|| input[noXCounter] == 'X')
+	if (input[counter] == 'x'|| input[counter] == 'X')
 	{
-		input.erase(noXCounter);
+		input.erase(counter);
 	}
-	noXCounter++;
-	return noX(input);
+	else
+	{
+		counter++;
+	}
+	return noX(input,counter);
+}
+
+//Definition of countHi2
+int Substrings::countHi2()
+{
+
 }
