@@ -3,5 +3,6 @@ using namespace std;
 void main()
 {
 	Substrings a;
-	cout << a.noX("xxxaxxx");
+	string str = "thisXstringXhasX'sxinxit";
+	cout << a.noX(str);
 }

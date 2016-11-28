@@ -11,5 +11,5 @@ class Substrings
 	void countAbc();
 	void strCount();
 private:
-	int noXCounter = 0;
+	int noXCounter;
 };
