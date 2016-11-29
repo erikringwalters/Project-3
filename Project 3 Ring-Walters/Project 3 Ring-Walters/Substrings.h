@@ -11,4 +11,5 @@ class Substrings
 	void countAbc();
 	void strCount();
 private:
+	int CountHi2Counter;
 };

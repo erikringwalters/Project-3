@@ -7,6 +7,6 @@ void main()
 	string newString = a.noX(str, 0);
 	cout << newString << endl;
 	cout << "Counting 'hi' without 'x' prior: ";
-	a.countHi2("xhihihixhithisshouldcountto3", 0);
+	cout << a.countHi2("xhihihixhithisshouldcountto3", 0)<< endl;
 
 }
