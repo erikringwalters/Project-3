@@ -4,6 +4,7 @@
 Substrings::Substrings()
 {
 	CountHi2Counter = 0;
+	allStarCounter = 0;
 }
 
 //Definition of noX
@@ -45,4 +46,18 @@ int Substrings::countHi2(string str, int i)
 	}
 	i++;
 	return countHi2(str, i) + CountHi2Counter;
+}
+string Substrings::allStar(string str)
+{
+	int i = allStarCounter;
+	if (i == str.length() - 1)
+	{
+		return str;
+	}
+	if (str[i] != '*')
+	{
+		str.insert(i+1,1,'*');
+	}
+	allStarCounter++;
+	return allStar(str);
 }

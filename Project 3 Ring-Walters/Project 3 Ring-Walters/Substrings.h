@@ -7,9 +7,10 @@ class Substrings
 	Substrings();
 	string noX(string str, int counter);
 	int countHi2(string str, int i);
-	void allStar();
+	string allStar(string str);
 	void countAbc();
 	void strCount();
 private:
 	int CountHi2Counter;
+	int allStarCounter;
 };
