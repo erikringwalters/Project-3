@@ -9,4 +9,7 @@ void main()
 	cout << "Counting 'hi' without 'x' prior: ";
 	cout << a.countHi2("xhihihixhithisshouldcountto3")<< endl;
 	cout << a.allStar("allStarFunction") << endl;
+	cout << "Counting 'abc' and 'aba': ";
+	cout << a.countAbc("xxxxxxxxabcababcxxxxxxx") << endl;
+
 }

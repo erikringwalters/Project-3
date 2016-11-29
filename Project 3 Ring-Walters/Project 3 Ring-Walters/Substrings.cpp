@@ -3,7 +3,8 @@
 //Definition of default constructor
 Substrings::Substrings()
 {
-	noXcounter = CountHi2Counter = CountHi2Sum = allStarCounter = CountAbcCounter = 0;
+	noXcounter = CountHi2Counter = allStarCounter = CountAbcCounter = 0;
+	//initializes all private member variables to zero.
 }
 
 //Definition of noX
@@ -33,7 +34,7 @@ int Substrings::countHi2(string str)
 	int i = CountHi2Counter;
 	if (i == 0)
 	{
-		CountHi2Counter = CountHi2Sum = 0;
+		CountHi2Counter = 0;
 	}
 	if (i >= str.length())//base case: if index is at end of str
 	{
@@ -69,7 +70,25 @@ string Substrings::allStar(string str)
 //Definition of countAbc
 int Substrings::countAbc(string str)
 {
+	int found = 0;//used for if it finds 'abc' or 'aba'
 	int i = CountAbcCounter;
-	if(i == str.length())//base case
-	return countAbc(str)+CountAbcCounter;
+	if (i == str.length())//base case
+	{
+		return 0;
+	}
+	if (str[i] == 'b' && str[i-1] == 'a')//if found 'ab' look for a successing 'c' or 'a'
+	{//seemed easier to look for last letter when im in the middle of the two letters. That's why I started at 'b'
+		if (str[i + 1] == 'c' || str[i + 1] == 'a')
+		{
+			found++;
+		}
+	}
+	CountAbcCounter++;
+	return countAbc(str) + found;
+}
+
+//Definition of strCount
+int Substrings::strCount(string str, string lookFor)
+{
+
 }

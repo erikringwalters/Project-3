@@ -9,10 +9,10 @@ class Substrings
 	int countHi2(string str);
 	string allStar(string str);
 	int countAbc(string str);
-	void strCount();
+	int strCount(string str, string lookFor);
 private:
 	int noXcounter;
-	int CountHi2Counter, CountHi2Sum;
+	int CountHi2Counter;
 	int allStarCounter;
 	int CountAbcCounter;
 };
