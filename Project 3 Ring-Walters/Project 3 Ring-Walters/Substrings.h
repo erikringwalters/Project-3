@@ -5,12 +5,14 @@ using namespace std;
 class Substrings
 {public:
 	Substrings();
-	string noX(string str, int counter);
-	int countHi2(string str, int i);
+	string noX(string str);
+	int countHi2(string str);
 	string allStar(string str);
-	void countAbc();
+	int countAbc(string str);
 	void strCount();
 private:
-	int CountHi2Counter;
+	int noXcounter;
+	int CountHi2Counter, CountHi2Sum;
 	int allStarCounter;
+	int CountAbcCounter;
 };
