@@ -6,4 +6,7 @@ void main()
 	string str = "thisXstringXhasX'sxinxitx";
 	string newString = a.noX(str, 0);
 	cout << newString << endl;
+	cout << "Counting 'hi' without 'x' prior: ";
+	a.countHi2("xhihihixhithisshouldcountto3", 0);
+
 }
