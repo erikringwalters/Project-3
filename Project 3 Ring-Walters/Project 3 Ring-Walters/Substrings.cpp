@@ -9,13 +9,13 @@ Substrings::Substrings()
 //Definition of noX
 string Substrings::noX(string input, int counter)
 {
-	if (counter == input.length() - 1)
+	if (counter == input.length())//base case
 	{
 		return input;
 	}
 	if (input[counter] == 'x'|| input[counter] == 'X')
 	{
-		input.erase(counter);
+		input.erase(counter, 1);
 	}
 	else
 	{
@@ -25,7 +25,8 @@ string Substrings::noX(string input, int counter)
 }
 
 //Definition of countHi2
-int Substrings::countHi2()
+int Substrings::countHi2(string str, int i)
 {
-
+	if(i == )
+	return 0;
 }
